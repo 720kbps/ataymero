@@ -1,0 +1,109 @@
+/*hover effect*/
+.nav-list{  
+   padding: 0;
+   list-style: none;
+   display: table;
+   width: 400px;
+   text-align: center;  
+   font-family: Ubuntu, serif;
+   font-weight: normal;
+   position: relative;
+   z-index: 10;
+   left: 9%;
+   font-size: 22px;
+   width: 51%;
+   top: 25%
+}
+body{
+    background: #000000;
+}
+.element{
+    display: table-cell;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+.element::after{
+    content: "";
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.4s ease 0s, left 0.4s ease 0s;
+    width: 0;
+}
+.element:hover::after{
+    width: 100%;
+    left:0;
+}
+/*hover effect*/
+
+.ataymero{
+    color: white;
+    position: absolute;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 120px;
+    top: 178px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 7;
+}
+.background{
+    width: 100%;
+    height: 720px;
+}
+.container{
+    position: relative;
+    text-align: center;
+}
+#ground{
+    font-size:48px;
+    font-weight:normal;
+    top:280px
+}
+#topbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    background: white;
+    z-index: 8;
+    background: black;
+}
+#what{
+position: relative;
+width: 100%;
+height: 40px;
+left: 50%;  
+transform: translate(-50%, -50%);
+top: 60px;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 55px;  
+text-align: center;
+letter-spacing: 0.3em;
+color: #FFFFFF;
+}
+pre{    
+    height: 120px;
+}
+.container2{
+    width: 100%;    
+    height: 937px;
+}   
+.colaj{
+    position: relative;
+    top: 341px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
